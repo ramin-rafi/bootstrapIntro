@@ -43,7 +43,6 @@ h1 {
 }
 
 li {
-	float: left;
 	/* list-style-type: none; */
 	color: var(--orange);
 }
@@ -654,4 +653,10 @@ blockquote {
 }
 .v-align {
 	vertical-align: center;
+}
+.sticky-top {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 999;
 }
