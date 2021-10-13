@@ -33,6 +33,7 @@ html {
 .font-mulish {
 	font-family: "Mulish", sans-serif;
 }
+
 .row {
 	outline: 1px solid orange;
 }
@@ -236,9 +237,7 @@ li {
 	margin-left: 10rem !important;
 	margin-right: 10rem !important;
 }
-.ml-minus3 {
-	margin-left: -3%;
-}
+
 .mr-0 {
 	margin-right: 0 !important;
 }
