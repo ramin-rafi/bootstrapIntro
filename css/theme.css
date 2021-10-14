@@ -1,24 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;700;900&display=swap");
-
 :root {
 	--white: #ffffff;
 	--light: #f3f3f3;
 	--black: #000000;
 	--dark: #373737;
-	--red: #ff4858;
 	--gray: #999999;
 	--lightGray: #e0e0e0;
 	--orange: #f16821;
 	--darkish: #777;
-
-	/* Font Size */
-	--fontSize: 14px;
-	--fontSizeSm: 16px;
-	--fontSizeMd: 20px;
-	--fontSizeLg: 24px;
-	--fontSizeXl: 30px;
 }
-
 html {
 	scroll-behavior: smooth;
 	-ms-scroll-behavior: smooth;
@@ -33,25 +23,19 @@ html {
 .font-mulish {
 	font-family: "Mulish", sans-serif;
 }
-
 .row {
 	outline: 1px solid orange;
 }
+/* helper classes */
 h1 {
 	font-weight: 700;
 	color: var(--black);
 }
-
-li {
-	/* list-style-type: none; */
-	color: var(--orange);
-}
-
-.bg-light {
-	background-color: var(--light);
-}
 .border-none {
 	border: none;
+}
+.bg-light {
+	background-color: var(--light);
 }
 
 .bg-white {
@@ -84,18 +68,15 @@ li {
 .font-size-regular {
 	font-size: regular;
 }
-
 .primary {
 	color: var(--orange);
 }
 .nav-link {
 	color: var(--dark);
 }
-
 .nav-bar .nav > a:hover {
 	color: var(--orange);
 }
-
 .navbar-default .navbar-nav > li > a {
 	color: var(--dark);
 	font-family: "Mulish", sans-serif;
@@ -129,7 +110,6 @@ li {
 	padding-top: 0.5rem !important;
 	padding-bottom: 0.5rem !important;
 }
-
 .py-3 {
 	padding-top: 1rem !important;
 	padding-bottom: 1rem !important;
@@ -153,7 +133,6 @@ li {
 	padding-left: 0.5rem !important;
 	padding-right: 0.5rem !important;
 }
-
 .px-2 {
 	padding-left: 0.5rem !important;
 	padding-right: 0.5rem !important;
@@ -165,7 +144,6 @@ li {
 .pr-3 {
 	padding-right: 1rem !important;
 }
-
 .py-3 {
 	padding-bottom: 1rem !important;
 	padding-top: 1rem !important;
@@ -190,12 +168,10 @@ li {
 	margin-top: 0.5rem !important;
 	margin-bottom: 0.5rem !important;
 }
-
 .my-2 {
 	margin-top: 0.5rem !important;
 	margin-bottom: 0.5rem !important;
 }
-
 .my-3 {
 	margin-top: 1rem !important;
 	margin-bottom: 1rem !important;
@@ -220,7 +196,6 @@ li {
 	margin-left: 0.5rem !important;
 	margin-right: 0.5rem !important;
 }
-
 .mx-3 {
 	margin-left: 1rem !important;
 	margin-right: 1rem !important;
@@ -237,7 +212,6 @@ li {
 	margin-left: 10rem !important;
 	margin-right: 10rem !important;
 }
-
 .mr-0 {
 	margin-right: 0 !important;
 }
@@ -283,93 +257,72 @@ li {
 .mb-4 {
 	margin-bottom: 1.5rem !important;
 }
-
 .mb-5 {
 	margin-bottom: 3rem !important;
 }
 .col-offset-1 {
 	margin-left: 8.3333%;
 }
-
 .col-offset-2 {
 	margin-left: 16.6666%;
 }
-
 .col-offset-3 {
 	margin-left: 25%;
 }
-
 .col-offset-4 {
 	margin-left: 33.3333%;
 }
-
 .col-offset-5 {
 	margin-left: 41.6665%;
 }
-
 .col-offset-6 {
 	margin-left: 50%;
 }
-
 .col-offset-7 {
 	margin-left: 58.3331%;
 }
-
 .col-offset-8 {
 	margin-left: 66.6666%;
 }
-
 .col-offset-9 {
 	margin-left: 75%;
 }
-
 .col-offset-10 {
 	margin-left: 83.3333%;
 }
-
 .col-offset-11 {
 	margin-left: 91.6666%;
 }
-
 .mr-auto {
 	margin-right: auto !important;
 }
-
 .ml-auto {
 	margin-left: auto !important;
 }
-
 .d-none {
 	display: none !important;
 }
-
 * {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
 .site-navbar .site-navigation .site-menu > li {
 	display: inline-block;
 }
-
 li {
 	display: list-item;
 	text-align: -webkit-match-parent;
 }
-
 .nav-link {
 	display: block;
 	padding: 0.5rem 1rem;
 }
-/* overlay */
-
 .b-30 {
 	bottom: 500px;
 }
 .b-0 {
 	bottom: 0;
 }
-
 .font-weight-300 {
 	font-weight: 300;
 }
@@ -387,7 +340,6 @@ li {
 	font-weight: 900;
 	font-size: 4rem;
 }
-
 .font-size-24 {
 	font-size: 2.5rem;
 }
@@ -424,7 +376,6 @@ li {
 	font-weight: 900;
 	padding: 6px 20px;
 }
-
 .d-block {
 	display: block !important;
 }
@@ -437,7 +388,6 @@ li {
 .text-right {
 	text-align: right;
 }
-
 .btn {
 	display: inline-block;
 	font-weight: 400;
@@ -454,7 +404,6 @@ li {
 	line-height: 1.5;
 	border-radius: 0.25rem;
 }
-
 .justify-content-center {
 	justify-content: center !important;
 }
@@ -493,10 +442,16 @@ li {
 	letter-spacing: 0.9px;
 	width: 100%;
 }
+.unit-4 .unit-4-icon span {
+	font-size: 3rem;
+}
+
+.align-items-stretch {
+	align-items: stretch;
+}
 .img {
 	width: 100%;
 }
-
 .position-absolute {
 	position: absolute;
 }
@@ -506,6 +461,12 @@ li {
 .background {
 	width: 100%;
 }
+.w-75 {
+	width: 75%;
+}
+i:hover {
+	color: var(--dark);
+}
 /* section */
 .section-sub-title {
 	font-size: 13px;
@@ -514,7 +475,6 @@ li {
 	text-transform: uppercase;
 	font-weight: 700;
 }
-
 .section-title {
 	font-size: 40px;
 	font-weight: 900;
@@ -530,7 +490,6 @@ li {
 	font-weight: 400;
 	font-size: 2rem;
 }
-
 figure {
 	display: block;
 	margin-block-start: 1em;
@@ -538,7 +497,6 @@ figure {
 	margin-inline-start: 40px;
 	margin-inline-end: 40px;
 }
-
 .btn.btn-black.btn-outline-black {
 	color: var(--black);
 	background-color: transparent;
@@ -547,7 +505,6 @@ figure {
 	color: var(--white);
 	background-color: var(--black);
 }
-
 .btn.btn-black {
 	border-width: 2px;
 	border-color: var(--black);
@@ -564,7 +521,6 @@ figure {
 	margin-right: 5px;
 	font-size: 13px;
 }
-
 .section-paraa {
 	line-height: 2;
 	letter-spacing: 0.9px;
@@ -584,18 +540,11 @@ figure {
 	letter-spacing: normal;
 	line-height: 1.2;
 }
-
 .experience span {
 	display: block;
 }
 .border-bottom {
 	border-bottom: 3em solid transparent;
-}
-.w-75 {
-	width: 75%;
-}
-i:hover {
-	color: var(--dark);
 }
 #date-countdown .label {
 	font-size: 40px;
@@ -614,20 +563,11 @@ i:hover {
 	display: inline-block;
 	border-radius: 7px;
 }
-.unit-4 .unit-4-icon span {
-	font-size: 3rem;
-}
-
-.align-items-stretch {
-	align-items: stretch;
-}
-
 .form-control:active,
 .form-control:focus {
 	border-color: var(--orange);
 	box-shadow: none;
 }
-
 .carousel-inner.image img {
 	width: 200px;
 	margin: 0 auto;
@@ -638,7 +578,6 @@ i:hover {
 	margin: 0 auto;
 	border-radius: 50%;
 }
-
 blockquote {
 	font-size: 2.5rem;
 	font-style: italic;
@@ -650,9 +589,6 @@ blockquote {
 }
 .carousel-indicators .active {
 	background-color: var(--orange);
-}
-.v-align {
-	vertical-align: center;
 }
 .sticky-top {
 	position: -webkit-sticky;
