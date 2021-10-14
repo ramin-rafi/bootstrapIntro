@@ -6,20 +6,19 @@
 	--light: #f3f3f3;
 	--white: #fff;
 	--gray: gray;
+	--lightgray: rgb(199, 199, 199);
+	--turquoise: #46ddb0;
 }
 
 body {
 	font-family: "Mulish", sans-serif;
 	font-size: 16px;
 	margin: 0 auto;
+	letter-spacing: 0.5px;
 }
 
 .container {
 	max-width: 1200px;
-	outline: 1px solid var(--orange);
-}
-
-.row {
 	outline: 1px solid var(--orange);
 }
 
@@ -259,50 +258,6 @@ h3 {
 	margin-bottom: 60px !important;
 }
 
-.col-offset-1 {
-	margin-left: 8.3333%;
-}
-
-.col-offset-2 {
-	margin-left: 16.6666%;
-}
-
-.col-offset-3 {
-	margin-left: 25%;
-}
-
-.col-offset-4 {
-	margin-left: 33.3333%;
-}
-
-.col-offset-5 {
-	margin-left: 41.6665%;
-}
-
-.col-offset-6 {
-	margin-left: 50%;
-}
-
-.col-offset-7 {
-	margin-left: 58.3331%;
-}
-
-.col-offset-8 {
-	margin-left: 66.6666%;
-}
-
-.col-offset-9 {
-	margin-left: 75%;
-}
-
-.col-offset-10 {
-	margin-left: 83.3333%;
-}
-
-.col-offset-11 {
-	margin-left: 91.6666%;
-}
-
 .position-relative {
 	position: relative !important;
 }
@@ -331,6 +286,10 @@ h3 {
 	color: var(--white) !important;
 }
 
+.text-turquoise {
+	color: var(--turquoise) !important;
+}
+
 .text-gray {
 	color: var(--gray) !important;
 }
@@ -346,6 +305,7 @@ h3 {
 .bg-milk {
 	background-color: #f8f9fa !important;
 }
+
 .d-inlineblock {
 	display: inline-block !important;
 }
@@ -367,10 +327,10 @@ h3 {
 }
 
 .sticky-top {
-	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
 	z-index: 999;
+	box-shadow: 5px 5px 5px var(--lightgray);
 }
 
 .site-logo {
@@ -383,6 +343,10 @@ h3 {
 
 .bradius-none {
 	border-radius: 0;
+}
+
+.bradius {
+	border-radius: 7px;
 }
 
 .btn {
@@ -431,24 +395,29 @@ h3 {
 	background-color: var(--orange);
 }
 
+.carousel-control.left,
+.carousel-control.right {
+	background-image: none !important;
+	filter: none !important;
+}
+
+.navbar-nav li a:hover {
+	color: var(--orange) !important;
+	background-color: var(--white) !important;
+}
+
+.zoom:hover,
+.zoom:focus {
+	border: 4px solid var(--orange);
+	transition: all 0.3s linear;
+	width: 90%;
+}
+
 @media (max-width: 993px) {
 	body {
 		text-align: center;
 	}
-
-	.col-offset-1,
-	.col-offset-2,
-	.col-offset-3,
-	.col-offset-4,
-	.col-offset-5,
-	.col-offset-6,
-	.col-offset-7,
-	.col-offset-8,
-	.col-offset-9,
-	.col-offset-10,
-	.col-offset-11,
-	.col-offset-12 {
-		margin: 0 24%;
-		padding: 0;
+	.form-group {
+		text-align: left !important;
 	}
 }
