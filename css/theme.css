@@ -5,6 +5,7 @@
 	--black: #000;
 	--light: #f3f3f3;
 	--white: #fff;
+	--milk:#f8f9fa;
 	--gray: gray;
 	--lightgray: rgba(179, 179, 179, 0.959);
 	--turquoise: #46ddb0;
@@ -312,7 +313,11 @@ h3 {
 }
 
 .bg-milk {
-	background-color: #f8f9fa !important;
+	background-color: var(--milk) !important;
+}
+
+.bg-black {
+	background-color: var(--black) !important;
 }
 
 .b-cover {
